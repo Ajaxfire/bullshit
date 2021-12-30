@@ -1,0 +1,95 @@
+.divWrapper {
+  margin: 0px auto;
+  width: 60rem;
+  margin-top: 3rem;
+}
+
+.wrapper_mask {
+    width: 100%;
+    height: 9.375rem;
+    overflow: hidden; 
+    position: relative;
+    display: inline-block;
+    /*margin-bottom: -2.5rem; */
+}
+
+
+.list_item {
+    min-height: 9.375rem;
+    max-height: 9.375rem;
+    margin: 0rem;
+    padding: 0rem;
+    background-size: contain;
+    text-align: center;
+    color:#008F11;
+    font-family: 'VT323', monospace;
+}
+
+/* Typography */
+
+body {
+  /*font-family: Helvetica, Arial, sans serif;*/
+  font-family: 'Orbitron', sans-serif;;
+  font-size: 16px;
+  background-color: #0D0208;
+  color:#00FF41;
+}
+
+.recipe_if, .recipe_then {
+    font-weight: bold;
+    font-size: 3rem;
+    top:0px;
+}
+
+.tagline {
+  font-weight: normal;
+  font-size: 1.5rem;
+}
+
+a {
+ font-weight: bold;
+ text-decoration: none;
+ color: #33CCFF;
+}
+
+.container {
+    position: absolute;
+    width:20rem;
+}
+
+.tblSlot {
+    width: 100%;
+    height:100%;
+} 
+
+.btnGen {
+    width: 50%;
+    height: 4rem;
+    background-color: #00FF41;
+    color:#0D0208;
+    margin:0 auto;
+    font-size:3rem;
+    text-align:center;
+    border-radius: 4rem 0 4rem 0;
+    box-shadow: 5px 10px 8px #003B00;
+}
+
+.txtBS {
+    width: 50%;
+    height: 4rem;
+    color:#0D0208;
+    margin:0 auto;
+    font-size:2rem;
+    text-align:center;
+    border-radius: .5rem .5rem 1rem .5rem;
+}
+
+#actionbox {
+    left:0px;
+}
+#adjectivebox {
+    left:20rem;
+}
+#nounbox {
+    left:40rem;
+}
