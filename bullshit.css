@@ -9,8 +9,10 @@
     height: 9.375rem;
     overflow: hidden; 
     position: relative;
-    display: inline-block;
-    /*margin-bottom: -2.5rem; */
+   /* display: inline-block;
+    margin-bottom: -2.5rem; */
+    border-top: 0.01em solid;
+    border-bottom: 0.01em solid;
 }
 
 
@@ -22,7 +24,7 @@
     background-size: contain;
     text-align: center;
     color:#008F11;
-    font-family: 'VT323', monospace;
+    
 }
 
 /* Typography */
@@ -35,9 +37,13 @@ body {
   color:#00FF41;
 }
 
+p {
+    font-family: 'Nova Mono', monospace;
+}
+
 .recipe_if, .recipe_then {
     font-weight: bold;
-    font-size: 3rem;
+    font-size: 1.5rem;
     top:0px;
 }
 
@@ -57,6 +63,8 @@ a {
     width:20rem;
 }
 
+
+
 .tblSlot {
     width: 100%;
     height:100%;
@@ -72,7 +80,9 @@ a {
     text-align:center;
     border-radius: 4rem 0 4rem 0;
     box-shadow: 5px 10px 8px #003B00;
+    cursor: pointer;
 }
+
 
 .txtBS {
     width: 50%;
@@ -92,4 +102,11 @@ a {
 }
 #nounbox {
     left:40rem;
+}  
+
+.footer{
+    font-size: .5em;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
 }
