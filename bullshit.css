@@ -1,3 +1,13 @@
+html{
+    font-size: 16px;
+}
+
+@media only screen and (max-width: 600px){
+    html{
+        font-size: 20px;
+    }
+}
+
 .divWrapper {
   margin: 0px auto;
   width: 60rem;
@@ -32,8 +42,8 @@
 body {
   /*font-family: Helvetica, Arial, sans serif;*/
   font-family: 'Orbitron', sans-serif;;
-  font-size: 16px;
-  background-color: #0D0208;
+  font-size: 1rem;
+  background-color: #080205;
   color:#00FF41;
 }
 
@@ -63,8 +73,6 @@ a {
     width:20rem;
 }
 
-
-
 .tblSlot {
     width: 100%;
     height:100%;
@@ -79,10 +87,9 @@ a {
     font-size:3rem;
     text-align:center;
     border-radius: 4rem 0 4rem 0;
-    box-shadow: 5px 10px 8px #003B00;
+    box-shadow: .5rem .5rem 1rem #003B00;
     cursor: pointer;
 }
-
 
 .txtBS {
     width: 50%;
@@ -105,8 +112,7 @@ a {
 }  
 
 .footer{
-    font-size: .5em;
+    padding-top: 3rem;
+    font-size: .75rem;
     text-align: center;
-    position: absolute;
-    bottom: 0;
 }
