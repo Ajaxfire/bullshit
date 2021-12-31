@@ -33,7 +33,7 @@ html{
     padding: 0rem;
     background-size: contain;
     text-align: center;
-    color:#008F11;
+    color:#00FF41;
     
 }
 
@@ -89,6 +89,18 @@ a {
     border-radius: 4rem 0 4rem 0;
     box-shadow: .5rem .5rem 1rem #003B00;
     cursor: pointer;
+    transition-duration: 500ms;
+}
+
+.btnGen:hover{
+    background-color: #008F11;
+    color:#00FF41;
+}
+
+.btnGen:active{
+    background-color: #008F11;
+    box-shadow: .25rem .25rem .5rem #080205;
+    transform:translateY(.5rem);
 }
 
 .txtBS {
