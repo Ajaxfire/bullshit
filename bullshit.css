@@ -49,6 +49,7 @@ body {
 
 p {
     font-family: 'Nova Mono', monospace;
+    color: #faebd7;
 }
 
 .recipe_if, .recipe_then {
