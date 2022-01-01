@@ -244,21 +244,21 @@ function randomSlotttIndex(max) {
   
 function animateActions() {
   var wordIndex = randomSlotttIndex(actionsList.length);
-  $actionbox.animate({top: -wordIndex*150}, 500, 'swing', function () {
+  $actionbox.animate({top: -wordIndex*100}, 500, 'swing', function () {
     rotateContents($actionbox, wordIndex);
   });
 }
 
 function animateAdjectives(){
     var wordIndex = randomSlotttIndex(adjectivesList.length);
-    $adjectivebox.animate({top: -wordIndex*150}, 500, 'swing', function () {
+    $adjectivebox.animate({top: -wordIndex*100}, 500, 'swing', function () {
       rotateContents($adjectivebox, wordIndex);
     });
 }
 
 function animateNouns() {
     var wordIndex = randomSlotttIndex(nounsList.length);
-    $nounbox.animate({top: -wordIndex*150}, 500, 'swing', function () {
+    $nounbox.animate({top: -wordIndex*100}, 500, 'swing', function () {
       rotateContents($nounbox, wordIndex);
     });
 }

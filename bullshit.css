@@ -16,7 +16,7 @@ html{
 
 .wrapper_mask {
     width: 100%;
-    height: 9.375rem;
+    height: 6.25rem;
     overflow: hidden; 
     position: relative;
    /* display: inline-block;
@@ -27,8 +27,8 @@ html{
 
 
 .list_item {
-    min-height: 9.375rem;
-    max-height: 9.375rem;
+    min-height: 6.25rem;
+    max-height: 6.25rem;
     margin: 0rem;
     padding: 0rem;
     background-size: contain;
@@ -44,7 +44,12 @@ body {
   font-family: 'Orbitron', sans-serif;;
   font-size: 1rem;
   background-color: #080205;
-  color:#00FF41;
+  /* color:#00FF41; */
+  color: #faebd7;
+}
+
+h1, h2 {
+    color:#00FF41;
 }
 
 p {
@@ -90,13 +95,15 @@ a {
     border-radius: 4rem 0 4rem 0;
     box-shadow: .5rem .5rem 1rem #003B00;
     cursor: pointer;
-    transition-duration: 500ms;
+    transition-duration: 250ms;
+    margin-bottom: 2rem;
+
 }
 
-.btnGen:hover{
+/* .btnGen:hover{
     background-color: #008F11;
     color:#00FF41;
-}
+} */
 
 .btnGen:active{
     background-color: #008F11;
@@ -128,4 +135,16 @@ a {
     padding-top: 3rem;
     font-size: .75rem;
     text-align: center;
+    color:#00FF41;
+}
+
+.q {
+    color:#00FF41;
+}
+.ans {
+    font-style: italic;
+    list-style: none;
+    padding-bottom:1rem;
+    padding-top:.25rem;
+    font-family: 'Nova Mono', monospace;
 }
