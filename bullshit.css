@@ -1,5 +1,9 @@
 html{
     font-size: 16px;
+    --headers:#3badca;
+    --text:#dce3e6;
+    --dark:#0D0208;
+    --light:#faeb14;
 }
 
 @media only screen and (max-width: 600px){
@@ -11,7 +15,9 @@ html{
 .divWrapper {
   margin: 0px auto;
   width: 60rem;
-  margin-top: 3rem;
+  /* margin-top: 3rem; */
+  background: rgba(0,0,0,.75);
+
 }
 
 .wrapper_mask {
@@ -33,7 +39,7 @@ html{
     padding: 0rem;
     background-size: contain;
     text-align: center;
-    color:#00FF41;
+    color:var(--light);
     
 }
 
@@ -41,26 +47,28 @@ html{
 
 body {
   /*font-family: Helvetica, Arial, sans serif;*/
-  font-family: 'Orbitron', sans-serif;;
+  font-family: 'Anton', sans-serif;;
   font-size: 1rem;
-  background-color: #080205;
-  /* color:#00FF41; */
-  color: #faebd7;
+  /* background-color: #080205;
+   color:var(--headers); */
+   background: url("sharktank.jpeg") no-repeat fixed;
+  color: var(--text);;
 }
 
 h1, h2 {
-    color:#00FF41;
+    color:var(--headers);
 }
 
 p {
     font-family: 'Nova Mono', monospace;
-    color: #faebd7;
+    color: var(--text);;
 }
 
 .recipe_if, .recipe_then {
     font-weight: bold;
     font-size: 1.5rem;
     top:0px;
+    color:var(--light);
 }
 
 .tagline {
@@ -71,7 +79,7 @@ p {
 a {
  font-weight: bold;
  text-decoration: none;
- color: #33CCFF;
+ color:var(--text);
 }
 
 .container {
@@ -87,13 +95,13 @@ a {
 .btnGen {
     width: 50%;
     height: 4rem;
-    background-color: #00FF41;
-    color:#0D0208;
+    background-color: var(--headers);
+    color:var(--dark);;
     margin:0 auto;
     font-size:3rem;
     text-align:center;
     border-radius: 4rem 0 4rem 0;
-    box-shadow: .5rem .5rem 1rem #003B00;
+    box-shadow: .5rem .5rem 1rem #08071b;
     cursor: pointer;
     transition-duration: 250ms;
     margin-bottom: 2rem;
@@ -102,7 +110,7 @@ a {
 
 /* .btnGen:hover{
     background-color: #008F11;
-    color:#00FF41;
+    color:var(--headers);
 } */
 
 .btnGen:active{
@@ -114,7 +122,7 @@ a {
 .txtBS {
     width: 50%;
     height: 4rem;
-    color:#0D0208;
+    color:var(--dark);;
     margin:0 auto;
     font-size:2rem;
     text-align:center;
@@ -132,14 +140,15 @@ a {
 }  
 
 .footer{
+    font-family: 'Nova Mono', monospace;
     padding-top: 3rem;
     font-size: .75rem;
     text-align: center;
-    color:#00FF41;
+    color:var(--headers);
 }
 
 .q {
-    color:#00FF41;
+    color:var(--headers);
 }
 .ans {
     font-style: italic;

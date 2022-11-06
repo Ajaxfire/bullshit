@@ -264,6 +264,7 @@ function animateNouns() {
 }
 
 function mkBull(){
+    $('div.btnGen').text("Try Again!");
     animateActions();
     animateAdjectives();
     animateNouns();
