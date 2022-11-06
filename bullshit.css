@@ -6,7 +6,7 @@ html{
     --light:#faeb14;
 }
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 500px){
     html{
         font-size: 20px;
     }
@@ -14,14 +14,19 @@ html{
 
 .divWrapper {
   margin: 0px auto;
-  width: 60rem;
+ /* width: 60rem; */
   /* margin-top: 3rem; */
   background: rgba(0,0,0,.75);
+    padding:1rem;
+}
 
+.sentence {
+    color:var(--light);
+    font-family: 'Orbitron', sans-serif;
 }
 
 .wrapper_mask {
-    width: 100%;
+  /*  width: 100%; */
     height: 6.25rem;
     overflow: hidden; 
     position: relative;
@@ -40,6 +45,7 @@ html{
     background-size: contain;
     text-align: center;
     color:var(--light);
+    font-family: 'Orbitron', sans-serif;;
     
 }
 
@@ -51,11 +57,20 @@ body {
   font-size: 1rem;
   /* background-color: #080205;
    color:var(--headers); */
-   background: url("sharktank.jpeg") no-repeat fixed;
+   background: url("sharktank.jpeg") no-repeat; 
+   background-size: cover;
   color: var(--text);;
 }
 
-h1, h2 {
+h1 {
+    background-image: linear-gradient(to right,var(--headers), var(--dark));
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+h2 {
+    font-family: 'Orbitron', monospace;
     color:var(--headers);
 }
 
@@ -86,19 +101,20 @@ a {
     position: absolute;
     width:20rem;
 }
-
+/*
 .tblSlot {
     width: 100%;
     height:100%;
 } 
-
+*/
 .btnGen {
-    width: 50%;
-    height: 4rem;
+    clear: both;
+    max-width: 75%;
+  /*  height: 4rem; */
     background-color: var(--headers);
     color:var(--dark);;
     margin:0 auto;
-    font-size:3rem;
+    font-size:2rem;
     text-align:center;
     border-radius: 4rem 0 4rem 0;
     box-shadow: .5rem .5rem 1rem #08071b;
@@ -129,6 +145,7 @@ a {
     border-radius: .5rem .5rem 1rem .5rem;
 }
 
+/*
 #actionbox {
     left:0px;
 }
@@ -138,7 +155,7 @@ a {
 #nounbox {
     left:40rem;
 }  
-
+*/
 .footer{
     font-family: 'Nova Mono', monospace;
     padding-top: 3rem;

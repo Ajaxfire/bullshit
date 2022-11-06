@@ -1,0 +1,16 @@
+{
+  "name": "Shark Tank Pitch Maker",
+  "short_name": "Pitch Maker",
+  "display": "minimal-ui",
+  "start_url": "index.html",
+  "theme_color": "#3badca",
+  "background_color": "#0D0208",
+  "icons": [
+    {
+      "src": "shark.ico",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

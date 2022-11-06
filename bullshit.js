@@ -1,4 +1,3 @@
-// This is a Github fork of a CodePen fork of IFTTT Slottt Machine by Jen Hamon
 // Inspiration: Serving the world for over 20 years: https://www.dack.com/web/bullshit.html
 // Slot machine inspiration: https://codepen.io/paulstone/pen/RRrQQB
 
@@ -80,8 +79,8 @@ var adjectivesList =[
     'back-end',
     'best-of-breed',
     'bleeding-edge',
-    'bricks-and-mortar',
-    'clicks-and-mortar',
+    'brick-and-mortar',
+    'click-and-mortar',
     'collaborative',
     'compelling',
     'cross-platform',
@@ -96,6 +95,7 @@ var adjectivesList =[
     'E2E',
     'enterprise',
     'extensible',
+    'excellent',
     'fintech',
     'free-form',
     'frictionless',
