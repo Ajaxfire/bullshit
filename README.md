@@ -3,4 +3,4 @@ Corporate mumbo-jumbo jargon generator. An easy to use interface to create your 
 
 Demo: [Shark Tank Pitch Maker](https://ajaxfire.github.io/bullshit)
 
-Not endprsed by the actual TV show.
+Not affiliated to the actual TV show.
