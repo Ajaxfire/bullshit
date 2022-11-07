@@ -63,7 +63,7 @@ body {
 }
 
 h1 {
-    background-image: linear-gradient(to right,var(--headers), var(--dark));
+    background-image: linear-gradient(to right,var(--headers), var(--text));
   color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
@@ -130,7 +130,7 @@ a {
 } */
 
 .btnGen:active{
-    background-color: #008F11;
+    background-color: var(--light);
     box-shadow: .25rem .25rem .5rem #080205;
     transform:translateY(.5rem);
 }
