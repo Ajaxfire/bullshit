@@ -11,6 +11,12 @@
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "maskable"
+    },
+    {
+      "src": "shark.ico",
+      "sizes": "150x150",
+      "type": "image/png",
+      "purpose": "maskable"
     }
   ]
 }

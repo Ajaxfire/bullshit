@@ -12,6 +12,18 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Anton&family=Nova+Mono&family=Orbitron&display=swap" rel="stylesheet">
+<script type="text/javascript">
+  function registerServiceWorker() {
+      // register sw script in supporting browsers
+      if ('serviceWorker' in navigator) {
+          navigator.serviceWorker.register('service-worker.js', { scope: '/bullshit/' }).then(() => {
+              console.log('Service Worker registered successfully.');
+          }).catch(error => {
+              console.log('Service Worker registration failed:', error);
+          });
+      }
+  }
+</script>
 </head>
 <body>
 <div class="divWrapper">
@@ -58,5 +70,6 @@
 </div>
 <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
 <script type="text/javascript" src="bullshit.js"></script>
+<script type="text/javascript">registerServiceWorker();</script>
 </body>
 </html>
