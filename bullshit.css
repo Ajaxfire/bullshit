@@ -158,7 +158,7 @@ a {
 */
 .footer{
     font-family: 'Nova Mono', monospace;
-    padding-top: 3rem;
+  /*  padding-top: 3rem; */
     font-size: .75rem;
     text-align: center;
     color:var(--headers);
