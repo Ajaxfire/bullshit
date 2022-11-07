@@ -10,7 +10,7 @@
       "src": "shark.ico",
       "sizes": "512x512",
       "type": "image/png",
-      "purpose": "maskable"
+      "purpose": "any"
     },
     {
       "src": "shark.ico",
