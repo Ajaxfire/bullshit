@@ -28,43 +28,38 @@
 </head>
 <body>
 <div class="divWrapper">
-    <h1>SHARK TANK INDIA </h1> <h1>Pitch Maker</h1>
-    <!-- <h2>Unofficial</h2> -->
-    <p>Making a Pitch deck? Want to impress a client/VC/investor/LT with serious sounding technobabble? <br />
-      Click the button below and get inspired by the farrago of buzzword confabulations.
+    <h1>SHARK TANK Pitch Maker</h1>
+    <h3>(now infused with ChatGPT)</h3>
+    <p>Making a Pitch deck? Want to impress a client/VC/investor/LT with serious sounding technobabble? With the help of the Pitch maker, you can click your worries away.<br />
+      Click the buttons below and get inspired by the farrago of buzzword confabulations.
+      <ul>
+        <li><strong>Make Bullshit</strong> - Create a simple keyword combination that you can use directly.</li>
+        <li><strong>Deluxe BS</strong> - Leverage the power of ChatGPT and generate a snippet of inscrutable jargon.</li>
+      </ul>
     </p>
+    <br />
+  <div class="btnContainer">
+      <div class="btnGen" id="btnGenBS" onclick="mkBull()">Make Bullshit!</div>
+      <div class="btnGen" id="btnGenGPT" onclick="deluxeBS()">Deluxe BS! (Coming soon)</div>
+  </div>
+  <div class="bordered">
     <p class="sentence">Our Vision is to:</p>
-  <div class="wrapper_mask" >
-    <div id="actionbox" class="container recipe_if"></div>
+    <div class="wrapper_container">
+      <div class="wrapper_mask" >
+        <div id="actionbox" class="container recipe_if"></div>
+      </div>
+      <div class="wrapper_mask" >
+        <div id="adjectivebox" class="container recipe_if" ></div>
+      </div>
+      <div class="wrapper_mask" >
+        <div id="nounbox" class="container recipe_if" ></div>
+      </div>
+    </div>
   </div>
-  <div class="wrapper_mask" >
-    <div id="adjectivebox" class="container recipe_if" ></div>
+  <div class="gpt_container">
+      <p class="sentence">Deluxe version:</p>
+    <div class="sentence" id="gptfied">The GPT generated text will appear here.</div>
   </div>
-  <div class="wrapper_mask" >
-    <div id="nounbox" class="container recipe_if" ></div>
-  </div>
-  <br />
-  <div>
-      <div class="btnGen" onclick="mkBull()">Make Bullshit!</div>
-  </div>
- <!--  <br />
-  <div style="display:flex">
-    <input class="txtBS" type="text" id="textCopy" disabled />
-  </div>  
-  <br /> -->
- <!-- <div class="faqs">Frequently Asked Questions
-    <ul>
-      <li class="q">Why this theme?</li>
-      <li class="ans">Because the Matrix 4 came out last week.</li>
-      <li class="q">How is this related to the Matrix?</li>
-      <li class="ans">The original Bullshit Generator and the first Matrix movie came out almost two decades ago. Everybody liked the originals but didn't care enough to be heavily invested in a sequel. Yet, here we are.</li>
-      <li class="q">It's a cool theme and all, but I know how it could have been done better</li>
-      <li class="ans">Please share your feedback/thoughts/comments to ajaxfire [dot] a [at] gmail [dot] com. I would love to hear them.</li>
-      <li class="q">I'm a programmer, can I update the code for this site?</li>
-      <li class="ans">You can fork off the <a href="https://github.com/Ajaxfire/bullshit" target="_blank" rel="noopener">source</a> from Github</li>
-    </ul>
-  </div> 
-  <br />-->
   <div class="footer">This is a satire. Not officially affiliated with Shark Tank or Shark Tank India. Source code on <a href="https://github.com/Ajaxfire/bullshit" target="_blank" rel="noopener">Github</a>.</div>
  
 </div>
