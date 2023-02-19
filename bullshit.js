@@ -230,7 +230,7 @@ function popPushNItems ($container, n) {
 // so the animation can slide upward infinitely without adding
 // infinte div elements inside the container.
 function rotateContents ($container, n) {
-    setTimeout(function () {
+    setTimeout(()=>{
       popPushNItems($container, n);
       $container.css({top: 0});
     }, 300);    
@@ -244,30 +244,35 @@ function randomSlotttIndex(max) {
   
 function animateActions() {
   var wordIndex = randomSlotttIndex(actionsList.length);
-  $actionbox.animate({top: -wordIndex*100}, 500, 'swing', function () {
+  $actionbox.animate({top: -wordIndex*48}, 500, 'swing', function () { //48 because 1 list-item height is 3rem = 3*16px = 48px
     rotateContents($actionbox, wordIndex);
   });
 }
 
 function animateAdjectives(){
     var wordIndex = randomSlotttIndex(adjectivesList.length);
-    $adjectivebox.animate({top: -wordIndex*100}, 500, 'swing', function () {
+    $adjectivebox.animate({top: -wordIndex*48}, 500, 'swing', function () {
       rotateContents($adjectivebox, wordIndex);
     });
 }
 
 function animateNouns() {
     var wordIndex = randomSlotttIndex(nounsList.length);
-    $nounbox.animate({top: -wordIndex*100}, 500, 'swing', function () {
+    $nounbox.animate({top: -wordIndex*48}, 500, 'swing', function () {
       rotateContents($nounbox, wordIndex);
     });
+
 }
 
 function mkBull(){
-    $('div.btnGen').text("Try Again!");
-    animateActions();
-    animateAdjectives();
-    animateNouns();
+    $('#btnGenBS').text("More BS!");
+      animateActions();
+      setTimeout(()=>{
+        animateAdjectives();
+      },300); //delay before the second animation
+      setTimeout(()=>{
+        animateNouns();
+      },600); //delay before the third animation
     return false;
 }
 
@@ -283,3 +288,8 @@ $(function () {
 //   setInterval(animateAdjectives, 5000);
 //   setInterval(animateNouns, 5000);
 });
+
+//ChatGPT
+function deluxeBS(){
+  //work in progress
+}
